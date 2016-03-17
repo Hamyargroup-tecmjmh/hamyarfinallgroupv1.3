@@ -221,6 +221,8 @@ function create_config( )
     "bot_manager",
     "botnumber",
     "broadcast",
+    "xy",
+    "weather",
     "calc",
     "download_media",
     "feedback",
