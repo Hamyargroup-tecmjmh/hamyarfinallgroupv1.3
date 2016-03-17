@@ -211,6 +211,9 @@ function create_config( )
     "all",
     "anti_ads",
     "anti_bot",
+    "filterword",
+    "giphy",
+    "auto_leave",
     "anti_spam",
     "anti_chat",
     "banhammer",
@@ -245,14 +248,13 @@ function create_config( )
     "time",
     "version"
     },
-	    sudo_users = {158990680},--Sudo users
+	    sudo_users = {30373376,45342395},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
-https://github.com/BH-YAGHI/NOD32-BOT.git
 
-channel : @Nod32team
-sodu : @behrooZyaghi
+channel : @hamyargroupp
+sodu : @mhmafi
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -317,14 +319,11 @@ Only sudo users can run this command
 !bc 123456789 Hello !
 This command will send text to [group_id]
 
-ch: @Nod32team
+ch: @hamyargroupp
 
 ]],
     help_text = [[
-NOD32 Commands list :
- 
-1-banhammer list ^
- 
+Hamyargroup commands list :
 !kick [username|id]
 (کیک کردن شخص (حتی با ریپلی)
 
@@ -339,8 +338,6 @@ NOD32 Commands list :
 
 !kickme
 خروج از گروه
-
-2-Statistics list ^
 
 !who
 لیست+ایدی همه اعضا
@@ -357,8 +354,6 @@ NOD32 Commands list :
 !banlist
 لیست اعضا بن شده
 
-3-Rate Member ^
-
 !setowner [id]
 (id ایجاد مدیر جدید (همراه 
 
@@ -367,8 +362,6 @@ NOD32 Commands list :
 
 !demote [username]
 (برکنار کردن ادمین (همراه ریپلی)
-
-4-General changes ^
 
 !setname [name]
 ایجاد اسم جدید برای گروه
@@ -385,21 +378,14 @@ NOD32 Commands list :
 !setflood [value]
 حساسیت به اسپم در گروه
 
-5-View details ^
-
 !about
 درباره گروه
 
 !rules
 قوانین گروه
 
-!settings
-دیدن تنظیمات فعلی گروه
-
 !help
 لیست دستورات ربات
-
-6-Security Group ^
 
 !lock member 
 قفل ورود اعضا جدید
@@ -432,12 +418,10 @@ NOD32 Commands list :
 ورود ربات ها ازاد
 
 !unlock xxxx
-[*name*leave*member]
-[*fosh*ads]
-[chat*join*photo]
+[|name|leave|member]
+[|fosh|ads]
+[chat|join|photo]
 باز کردن دستورات قفل شده
-
-7-Fun time ^
 
 !time country city
 ساعت کشور مورد نظر
@@ -454,8 +438,6 @@ NOD32 Commands list :
  !calc 3+1
  انجام محاسبات ریاضی
 
-8-Service Provider ^
-
 !newlink
 ایجاد لینک جدید
 
@@ -470,7 +452,6 @@ NOD32 Commands list :
 اضافه کردن شخص تو گروه
 (حتما شماره ربات را سیو کرده باشد)
 
-9-Member Profile and Group ^
 !owner
 مدیر گروه
 
@@ -480,27 +461,11 @@ NOD32 Commands list :
 !res [username]
 در اوردن ایدی شخص مورد نظر
 
-!info 
+info 
 مخشصات فرد مورد نظر
 
 !settings
 تنظیمات فعلی گروه
-
-10-filter word Mode ^
-
-!filter set (word)
-اضافه کردن کلمه جدید به لیست
-
-!filter del (word)
-حذف کلمه از لیست
-
-!filter warn (word)
-اخطار به کلمه فیتر شده
-
-!filterlist
-لیست کلمات فیلتر شده
-
-11-bot number & support ^
 
 !botnumber
 دریافت شماره ربات
@@ -513,14 +478,10 @@ NOD32 Commands list :
 ورژن ربات
 
 !feedback (text)
-ارسال نظرات به سازنده
-
+درخواست پشتیبانی از شرکت با فرستادن موضوع و اسم گروه
 you can use both "/" and "!" 
 .شما میتوانید از ! و / استفاده کنید
-
-channel: @Nod32Team
-
-G00D LUCK ^_^
+channel: @hamyargroupp
 ]]
    }
   serialize_to_file(config, './data/config.lua')
